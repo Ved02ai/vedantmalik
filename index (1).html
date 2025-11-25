@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="7R7EzbAmN5uTJWfiCQtyYDA_eFMgC8NHc2crmJeFfes" />
+    <meta name="description" content="Vedant Malik is a high school senior researcher specializing in AI-driven healthcare, genetic mutation analysis, and Vision-LLMs. View research, publications, and projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Malik - Student & Researcher Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #3B82F6; /* blue-500 */
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+            background: #3B82F6;
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <nav class="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-20 top-0 border-b border-gray-400">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-blue-700 hover:text-blue-800 transition-colors">
+                Vedant Malik
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#experience" class="nav-link text-sm text-gray-700 hover:text-blue-600 font-medium">Experience</a>
+                <a href="#models" class="nav-link text-sm text-gray-700 hover:text-blue-600 font-medium">Models</a>
+                <a href="#projects" class="nav-link text-sm text-gray-700 hover:text-blue-600 font-medium">Research & Projects</a>
+                <a href="#activities" class="nav-link text-sm text-gray-700 hover:text-blue-600 font-medium">Activities</a>
+                <a href="#volunteering" class="nav-link text-sm text-gray-700 hover:text-blue-600 font-medium">Volunteering</a>
+            </div>
+            
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute top-14 left-0 w-full bg-white shadow-lg z-10 border-b border-gray-400">
+            <a href="#experience" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Experience</a>
+            <a href="#models" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Models</a>
+            <a href="#projects" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Research & Projects</a>
+            <a href="#activities" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Activities</a>
+            <a href="#volunteering" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Volunteering</a>
+        </div>
+    </nav>
+
+    <header id="home" class="pt-24 pb-8 bg-white border-b border-gray-400">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <div class="md:w-3/5 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Hi, I'm <span class="text-blue-700 whitespace-nowrap">Vedant Malik</span>
+                </h1>
+                
+                <div class="mt-4 text-lg text-gray-700 space-y-3 leading-relaxed">
+                    <p>
+                        Driven high school senior researcher focused on AI-driven healthcare, genetic mutation analysis, and equitable STEM education. Recognized as a Top 300 Broadcom MASTERS awardee and multiple 1st Place winner at the Lehigh Valley and Delaware Valley Science Fairs.
+                    </p>
+                    
+                    <p>
+                        I am actively researching in AI-driven healthcare and genetic mutation analysis: From detecting subdural hematoma disease progression and misfolded proteins to uncovering microbiome-based mechanisms of neuroinflammation.
+                    </p>
+                </div>
+
+                <div class="flex space-x-5 pt-5 justify-center md:justify-start">
+                    <a href="https://github.com/ved02ai" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors" aria-label="GitHub">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/vedantmalik" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:[your.email@example.com]" class="text-gray-600 hover:text-blue-600 transition-colors" aria-label="Email">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="bg-blue-600 text-white text-sm font-semibold py-2.5 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all transform hover:-translate-y-0.5 border border-blue-800">
+                        View Research
+                    </a>
+                    <a href="https://github.com/ved02ai" target="_blank" class="bg-gray-800 text-white text-sm font-semibold py-2.5 px-6 rounded-lg shadow-md hover:bg-gray-900 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 border border-black">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-2/5 flex flex-col items-center mt-4 md:mt-0">
+                <img src="photo.jpg" 
+                     alt="Vedant Malik" 
+                     class="rounded-2xl w-48 h-48 md:w-64 md:h-64 object-cover shadow-xl border-4 border-gray-600">
+                
+                <div class="mt-6 w-full max-w-[16rem] space-y-3">
+                    <div class="bg-purple-50 border-l-4 border-purple-700 p-3 rounded shadow-sm flex items-center gap-3 hover:scale-105 transition-transform border border-gray-300">
+                        <span class="text-2xl">🌟</span>
+                        <div>
+                            <h4 class="text-xs font-bold text-purple-900 uppercase tracking-wider">Broadcom MASTERS</h4>
+                            <p class="text-xs font-medium text-purple-700">Top 300 in the U.S.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border-l-4 border-yellow-600 p-3 rounded shadow-sm flex items-center gap-3 hover:scale-105 transition-transform border border-gray-300">
+                        <span class="text-2xl">🥇</span>
+                        <div>
+                            <h4 class="text-xs font-bold text-yellow-900 uppercase tracking-wider">Gold Medalist</h4>
+                            <p class="text-xs font-medium text-yellow-700">Delaware Valley Science Fair</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="models" class="pt-10 pb-6 bg-blue-100 relative overflow-hidden border-b border-blue-400">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-white -skew-x-12 opacity-30 -z-10"></div>
+
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                My Fine-Tuned LLMs
+            </h2>
+            <p class="text-gray-700 mb-8 max-w-2xl mx-auto text-sm font-medium">
+                Specialized language models fine-tuned on medical and biological datasets, hosted on Hugging Face.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-8">
+                
+                <a href="https://huggingface.co/ved02ai" target="_blank" class="group">
+                    <div class="w-44 h-44 rounded-full bg-white border-4 border-blue-500 shadow-lg flex flex-col items-center justify-center p-2 hover:scale-105 hover:border-blue-700 transition-all duration-300 cursor-pointer relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <span class="text-3xl mb-2 z-10">🤗</span>
+                        <h3 class="text-sm font-bold text-gray-900 z-10 leading-tight text-center">Llama 3.2<br>11B Vision</h3>
+                        <p class="text-[10px] text-gray-500 mt-1 z-10 font-medium">Radiology Reports</p>
+                        <span class="mt-2 text-[10px] font-bold text-blue-600 flex items-center z-10 uppercase tracking-wide">
+                            View Model
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://huggingface.co/ved02ai" target="_blank" class="group">
+                    <div class="w-44 h-44 rounded-full bg-white border-4 border-blue-500 shadow-lg flex flex-col items-center justify-center p-2 hover:scale-105 hover:border-blue-700 transition-all duration-300 cursor-pointer relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <span class="text-3xl mb-2 z-10">🧬</span>
+                        <h3 class="text-sm font-bold text-gray-900 z-10 leading-tight text-center">Qwen 2.5<br>VL 7B</h3>
+                        <p class="text-[10px] text-gray-500 mt-1 z-10 font-medium">Genomic Analysis</p>
+                        <span class="mt-2 text-[10px] font-bold text-blue-600 flex items-center z-10 uppercase tracking-wide">
+                            View Model
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://huggingface.co/ved02ai" target="_blank" class="group">
+                    <div class="w-44 h-44 rounded-full bg-white border-4 border-blue-500 shadow-lg flex flex-col items-center justify-center p-2 hover:scale-105 hover:border-blue-700 transition-all duration-300 cursor-pointer relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <span class="text-3xl mb-2 z-10">🩺</span>
+                        <h3 class="text-sm font-bold text-gray-900 z-10 leading-tight text-center">Llama 3.1<br>8B</h3>
+                        <p class="text-[10px] text-gray-500 mt-1 z-10 font-medium">Patient Assistant</p>
+                        <span class="mt-2 text-[10px] font-bold text-blue-600 flex items-center z-10 uppercase tracking-wide">
+                            View Model
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+            
+            <div class="mt-6">
+                <a href="https://huggingface.co/ved02ai" target="_blank" class="inline-flex items-center text-xs font-semibold text-gray-600 hover:text-blue-700 transition-colors">
+                    View all models on Hugging Face <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="projects" class="pt-8 pb-10 bg-white border-b border-gray-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-3 mt-4">
+                Research & Project Demos
+            </h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+                Selected works from international medical imaging conferences and competitive science research.
+            </p>
+
+            <div class="mb-12">
+                <div class="flex items-center gap-4 mb-6 border-b border-gray-300 pb-3">
+                    <i data-lucide="presentation" class="w-6 h-6 text-blue-600"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">Conference Presentations & Proceedings</h3>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white border border-gray-400 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div class="h-12 mb-4 flex items-center">
+                            <img src="logos/rsna.png" alt="RSNA Logo" class="h-full w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="hidden font-bold text-xl text-blue-900">RSNA</span>
+                        </div>
+                        
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Cross-Modal Discrepancy</h3>
+                        <p class="text-xs font-medium text-blue-600 mb-3">RSNA 2025 · Chicago, IL</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            From Disagreement to Diagnosis: advanced cross-modal discrepancy detection between radiology images and reports, using attention mechanisms to flag unsafe or inconsistent AI outputs.
+                        </p>
+                        <a href="https://github.com/ved02ai/rsna-discrepancy" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800">
+                            View Research <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div class="h-12 mb-4 flex items-center">
+                            <img src="logos/siim.png" alt="SIIM Logo" class="h-full w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="hidden font-bold text-xl text-teal-600">SIIM</span>
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">RadAlign</h3>
+                        <p class="text-xs font-medium text-blue-600 mb-3">SIIM 2025 · Portland, OR</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Enhancing diagnostic confidence and safety while minimizing hallucinations in AI-generated radiology reports using a Vision-LLM system designed specifically for medical imaging.
+                        </p>
+                        <a href="https://github.com/ved02ai/radalign" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800">
+                            View Research <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div class="h-12 mb-4 flex items-center">
+                            <img src="logos/eusomii.png" alt="EuSoMII Logo" class="h-full w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="hidden font-bold text-xl text-blue-800">EuSoMII</span>
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Vision-LLM Medical Imaging</h3>
+                        <p class="text-xs font-medium text-blue-600 mb-3">EuSoMII 2025 · Crete, Greece</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Beyond Accuracy – fine-tuning Vision LLMs with attention-guided reasoning for clinically trustworthy medical image summaries that radiologists can actually rely on.
+                        </p>
+                        <a href="https://eusomii-annualmeeting2025.com/schedule" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800">
+                            View Research <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div class="h-12 mb-4 flex items-center">
+                            <img src="logos/aacr.png" alt="AACR Logo" class="h-full w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="hidden font-bold text-xl text-orange-600">AACR</span>
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Spine Cancer AI Analysis</h3>
+                        <p class="text-xs font-medium text-blue-600 mb-3">AACR 2025 · Baltimore, MD</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Poster presentation on attention-based chain-of-thought reasoning for automated spine cancer image analysis. Abstract published in <em>Cancer Epidemiology, Biomarkers &amp; Prevention</em>.
+                        </p>
+                        <a href="https://github.com/ved02ai/spine-cancer-ai" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800">
+                            View Research <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div class="h-12 mb-4 flex items-center">
+                            <img src="logos/caimi.png" alt="CAIMI Logo" class="h-full w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="hidden font-bold text-xl text-indigo-600">CAIMI</span>
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Vector Contours for Vision-LLM</h3>
+                        <p class="text-xs font-medium text-blue-600 mb-3">CAIMI 2025 · Irvine, CA</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Vector Contours to the Rescue: using simple shape outlines to keep Vision-LLM generated radiology reports clinically grounded and less prone to hallucination.
+                        </p>
+                        <a href="https://github.com/ved02ai/caimi-vector" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-600 hover:text-blue-800">
+                            View Research <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center gap-4 mb-6 border-b border-gray-300 pb-3">
+                    <i data-lucide="flask-conical" class="w-6 h-6 text-blue-600"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">Competitive Research & Science Fairs</h3>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white border border-gray-400 border-l-4 border-l-yellow-500 rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Microbiome-Neuroinflammation</h3>
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full">2025</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-2 font-semibold">
+                            🥇 First Place, LVSF; 🥈 Second Place, DVSF
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            A Novel Microbiome-Based Mechanism to Neuroinflammation: Connecting Gut Microbial Dynamics with Neuro Inflammatory Mechanisms in Brain Disorders
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://github.com/ved02ai/neuroinflammation" target="_blank" class="inline-block text-xs bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-700">
+                                View Research
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=OPeBmcM43h4" target="_blank" class="inline-flex items-center text-xs text-blue-600 hover:text-blue-700 font-medium">
+                                <i data-lucide="play" class="w-4 h-4 mr-1"></i> Watch Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 border-l-4 border-l-yellow-500 rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">MyeloMut</h3>
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full">2024</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-2 font-semibold">
+                            🥇 First Place, LVSF; 🥈 Second Place, DVSF
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            A Novel Biocomputational approach for Identifying common patterns in Genetic Mutations causing Multiple Myeloma.
+                        </p>
+                        <a href="https://github.com/ved02ai/myelomut" target="_blank" class="inline-block text-xs bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-700">
+                            View Research
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 border-l-4 border-l-yellow-500 rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">RTRad</h3>
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full">2023</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-2 font-semibold">
+                            🥇 First Place, LVSF; 🥇 First Place, DVSF
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            A Novel AI-Based system to detect "Subdural Hematoma Disease Progression" that adapts to changing image data
+                        </p>
+                        <a href="https://github.com/ved02ai/rtrad" target="_blank" class="inline-block text-xs bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-700">
+                            View Research
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 border-l-4 border-l-purple-600 rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">ChaperDetect</h3>
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full">2022</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-2 font-semibold leading-relaxed">
+                            🥇 First Place & Gold Medalist, DVSF <br> 🥇 First Place, LVSF
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Detecting Misfolded Proteins That Escape Chaperones Causing Degenerative Disease Using AI-Based Deep Learning
+                        </p>
+                        <div class="mt-2 mb-4">
+                            <span class="inline-flex items-center bg-purple-100 text-purple-700 text-[10px] px-2 py-1 rounded font-bold">
+                                🌟 Broadcom MASTERS Top 300
+                            </span>
+                        </div>
+                        <a href="https://github.com/ved02ai/chaperdetect" target="_blank" class="inline-block text-xs bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-700">
+                            View Research
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 border-l-4 border-l-gray-500 rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Early Research</h3>
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-1 rounded-full">2021</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-2 font-semibold">
+                            🎖️ Honorable Mention, LVSF
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Early scientific research entry recognized at the Lehigh Valley Science & Engineering Research Fair.
+                        </p>
+                        <a href="#" class="inline-block text-xs bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-700">
+                            View Research
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="recognition" class="py-10 bg-blue-50 border-b border-gray-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-6">Research Awards Recognition</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-blue-400 flex items-start gap-5">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i data-lucide="award" class="w-6 h-6 text-blue-700"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-lg font-bold text-gray-900">Parenteral Drug Association Award</h3>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded-full">2022</span>
+                        </div>
+                        <p class="text-sm text-blue-600 font-medium mb-2">Delaware Valley Science Fair (DVSF)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Awarded for excellence in health-related research and its potential impact on public health and therapeutic development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="py-10 bg-white border-b border-gray-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+                Research Focus & Activities
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-400">
+                    <i data-lucide="flask-conical" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Driven Healthcare & Medical Imaging</h3>
+                    <p class="text-sm text-gray-600 font-medium mb-3">
+                        SIIM, EuSoMII, AACR, RSNA &amp; CAIMI 2025
+                    </p>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        I work on trustworthy, clinically grounded AI for radiology and medical imaging. Recent projects include:
+                        RadAlign (SIIM 2025) for enhancing diagnostic confidence and safety while minimizing hallucinations in AI-generated radiology reports; 
+                        attention-guided fine-tuning of vision LLMs for clinically trustworthy medical image summaries (EuSoMII 2025);
+                        cross-modal discrepancy detection between images and reports in radiology (RSNA 2025);
+                        and vector contour–based methods to keep Vision-LLM generated reports clinically grounded (CAIMI 2025).
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-400">
+                    <i data-lucide="users" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Genetic Mutations & Protein Misfolding</h3>
+                    <p class="text-sm text-gray-600 font-medium mb-3">
+                        MyeloMut &amp; ChaperDetect
+                    </p>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        MyeloMut is a novel biocomputational approach for identifying common patterns in genetic mutations causing multiple myeloma. It earned 1st Place at LVSF 2024 and 2nd Place at DVSF 2024. 
+                        Earlier, I developed ChaperDetect, an AI-based deep learning system to detect misfolded proteins that escape chaperones and contribute to degenerative disease. 
+                        This work received a Gold Medal and 1st Place at DVSF 2022 and 1st Place at LVSF 2022.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-400">
+                    <i data-lucide="book-open" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">SAT Tutor</h3>
+                    <p class="text-sm text-gray-600 font-medium mb-3">
+                        Schoolhouse SAT Tutoring
+                    </p>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Tutored multiple students across 3 continents (Africa, Europe, North America) for the SAT via Schoolhouse. Administered live examinations and saw score improvements over the course of multiple weeks.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="volunteering" class="py-10 bg-gray-100 border-b border-gray-400">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Community Volunteering</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md border border-gray-400 p-8 text-left flex items-start gap-6">
+                <div class="flex-shrink-0">
+                    <div class="bg-red-100 p-3 rounded-full">
+                        <i data-lucide="heart-handshake" class="w-8 h-8 text-red-500"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mentorship & Education</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Coached and mentored children in India during summer and winter vacations, focusing on the basics of math, science, and English. Committed to making educational resources accessible and supporting students in building strong academic foundations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
